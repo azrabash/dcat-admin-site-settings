@@ -1,0 +1,32 @@
+{
+    "name": "shuixiang/dcat-admin-site-settings",
+    "alias": "Dcat Admin Site Settings",
+    "description": "To config dcat-admin settings visible directly on admin page",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/Shuixiang/dcat-admin-site-settings.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shuixiang",
+            "email": "mr.shuixiang@aliyun.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shuixiang\\AdminSiteSettings\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Shuixiang\\AdminSiteSettings\\AdminSiteSettingsServiceProvider",
+        "laravel": {
+            "providers": [
+                "Shuixiang\\AdminSiteSettings\\AdminSiteSettingsServiceProvider"
+            ]
+        }
+    }
+}
