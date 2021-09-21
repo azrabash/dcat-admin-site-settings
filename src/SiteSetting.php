@@ -44,7 +44,7 @@ class SiteSetting
                 case 'img_text':
                     if (!empty($logoUrl)) {
                         $logoUrl = Storage::url($logoUrl);
-                        $config['admin.logo'] = "<img src='{$logoUrl}' width='35' />";
+                        $config['admin.logo'] = "<img src='{$logoUrl}' width='35' /> ";
                     } else {
                         $config['admin.logo'] = '';
                     }
@@ -68,7 +68,7 @@ class SiteSetting
         $defaultAvatar = admin_setting('default_avatar', null);
         if (!is_null($defaultAvatar)) {
             $defaultAvatar = Storage::url($defaultAvatar);
-            $config['admin.default_avatar'] = "<img src='{$defaultAvatar}' />";
+            $config['admin.default_avatar'] = $defaultAvatar;
         }
 
         // default icon
