@@ -1,8 +1,13 @@
 <?php
 
 return [
-    '1.0.0' => [
+    '0.0.1' => [
         'Initialize extension.',
-        'create_admin_site_settings_table',
+    ],
+    '0.0.2' => [
+        'Fixed bug',
+    ],
+    '0.0.3' => [
+        'Add favicon',
     ],
 ];

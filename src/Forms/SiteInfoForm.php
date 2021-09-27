@@ -56,6 +56,11 @@ class SiteInfoForm extends Form
             ->help(Provider::trans('admin_site_settings.helps.default_avatar'))
             ->default(admin_setting('default_avatar'));
 
+        $this->image('favicon', Provider::trans('admin_site_settings.fields.favicon'))
+            ->retainable()->removable()->uniqueName()
+            ->help(Provider::trans('admin_site_settings.helps.favicon'))
+            ->default(admin_setting('favicon'));
+        
         $this->icon('default_icon', Provider::trans('admin_site_settings.fields.default_icon'))
             ->help(Provider::trans('admin_site_settings.helps.default_icon'))
             ->default(admin_setting('default_icon'));

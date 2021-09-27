@@ -21,6 +21,7 @@ return [
         'logo' => 'Img Logo',
         'logo_mini' => 'Mini Img Logo',
         'default_avatar' => 'Default Avatar Img',
+        'favicon' => 'Default Favicon Img',
         'default_icon' => 'Default Menu Icon',
         'timezone' => 'Default Timezone',
         'locale' => 'Default Locale',

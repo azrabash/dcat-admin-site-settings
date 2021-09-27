@@ -20,6 +20,7 @@ return [
         'logo' => '图片LOGO',
         'logo_mini' => '微缩小LOGO图片',
         'default_avatar' => '默认头像',
+        'favicon' => '站点favicon',
         'default_icon' => '菜单默认图标',
         'timezone' => '时区',
         'locale' => '语言',

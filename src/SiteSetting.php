@@ -71,6 +71,15 @@ class SiteSetting
             $config['admin.default_avatar'] = $defaultAvatar;
         }
 
+        // favicon
+        $favicon = admin_setting('favicon', null);
+        if (!empty($favicon)) {
+            $favicon = Storage::url($favicon);
+            $config['admin.favicon'] = $favicon;
+        } else {
+            $config['admin.favicon'] = null;
+        }
+
         // default icon
         $defaultIcon = admin_setting('default_icon', null);
         if (!empty($defaultIcon)) {
