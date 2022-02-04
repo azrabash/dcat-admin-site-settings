@@ -23,32 +23,32 @@ class UiThemeForm extends Form
 
         $this->radio('site_layout_color', Provider::trans('admin_site_settings.fields.site_layout_color'))
             ->options([
-                'default' => '默认',
-                'blue' => '蓝色',
-                'blue-light' => '浅蓝',
-                'green' => '绿色',
+                'default' => 'Default',
+                'blue' => 'Blue',
+                'blue-light' => 'Light',
+                'green' => 'Green',
             ])
             ->help(Provider::trans('admin_site_settings.helps.site_layout_color'))
             ->default(admin_setting('site_layout_color')??'default');
 
         $this->radio('site_layout_sidebar_style', Provider::trans('admin_site_settings.fields.site_layout_sidebar_style'))
             ->options([
-                'light' => '浅色',
-                'primary' => '亮蓝色/主题色',
-                'dark' => '黑色',
+                'light' => 'Light',
+                'primary' => 'Primary',
+                'dark' => 'Dark',
             ])
             ->help(Provider::trans('admin_site_settings.helps.site_layout_sidebar_style'))
             ->default(admin_setting('site_layout_sidebar_style')??'light');
 
         $this->radio('site_layout_navbar_color', Provider::trans('admin_site_settings.fields.site_layout_navbar_color'))
             ->options([
-                '' => '不设置',
-                'bg-warning' => '橘色',
-                'bg-primary' => '亮蓝色/主题色',
-                'bg-info' => '浅蓝色',
-                'bg-success' => '绿色',
-                'bg-danger' => '红色',
-                'bg-dark' => '黑色',
+                '' => 'Not set',
+                'bg-warning' => 'Orange',
+                'bg-primary' => 'Blue',
+                'bg-info' => 'Light Blue',
+                'bg-success' => 'Green',
+                'bg-danger' => 'Red',
+                'bg-dark' => 'Black',
             ])
             ->help(Provider::trans('admin_site_settings.helps.site_layout_navbar_color'))
             ->default(admin_setting('site_layout_navbar_color')??'');
