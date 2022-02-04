@@ -8,7 +8,7 @@
 
 1、安装包
 ```shell
-composer require shuixiang/dcat-admin-site-settings
+composer require azrabash/dcat-admin-site-settings
 ```
 
 2、在admin/bootstrap.php中添加一下代码
