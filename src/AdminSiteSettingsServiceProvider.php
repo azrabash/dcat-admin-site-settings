@@ -15,8 +15,8 @@ class AdminSiteSettingsServiceProvider extends ServiceProvider
 
 	protected $menu = [
 	    [
-	        'title' => 'Admin Site Settings',
-            'uri' => 'admin-site-settings',
+	        'title' => 'Admin Settings',
+            'uri' => 'admin-settings',
             'icon' => 'fa fa-gears',
         ]
     ];
