@@ -75,11 +75,11 @@ class SiteInfoForm extends Form
 
         $this->radio('locale', Provider::trans('admin_site_settings.fields.locale'))
             ->options([
-                'zh_CN' => '中文（简体）',
-                'en' => '英文',
+                'zh_CN' => 'China',
+                'en' => 'English',
             ])
             ->help(Provider::trans('admin_site_settings.helps.locale'))
-            ->default(admin_setting('locale')??'zh_CN');
+            ->default(admin_setting('locale')??'en');
     }
 
 }
